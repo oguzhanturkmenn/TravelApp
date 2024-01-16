@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/welcomeFragment">
+    app:startDestination="@id/onboardFragment">
 
     <fragment
-        android:id="@+id/welcomeFragment"
-        android:name="com.example.travelapp.ui.welcome.WelcomeFragment"
-        android:label="fragment_welcome"
-        tools:layout="@layout/fragment_welcome" />
+        android:id="@+id/onboardFragment"
+        android:name="com.example.travelapp.ui.onboard.OnboardFragment"
+        android:label="fragment_onboard"
+        tools:layout="@layout/fragment_onboard" />
 </navigation>
