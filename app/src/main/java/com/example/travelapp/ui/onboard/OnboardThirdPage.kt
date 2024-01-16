@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import com.example.travelapp.R
 import com.example.travelapp.databinding.FragmentOnboardFirstPageBinding
 import com.example.travelapp.databinding.FragmentOnboardThirdPageBinding
+import com.example.travelapp.util.fullscreenMode
 
 class OnboardThirdPage : Fragment() {
 
@@ -28,6 +29,7 @@ class OnboardThirdPage : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        fullscreenMode()
     }
 
     override fun onDestroy() {
