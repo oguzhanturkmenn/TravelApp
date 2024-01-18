@@ -9,5 +9,31 @@
         android:id="@+id/onboardFragment"
         android:name="com.example.travelapp.ui.onboard.OnboardFragment"
         android:label="fragment_onboard"
-        tools:layout="@layout/fragment_onboard" />
+        tools:layout="@layout/fragment_onboard" >
+        <action
+            android:id="@+id/action_onboardFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.travelapp.ui.loginSignup.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_onboardFragment"
+            app:destination="@id/onboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.example.travelapp.ui.loginSignup.SignupFragment"
+        android:label="SignupFragment"
+        tools:layout="@layout/fragment_signup" >
+        <action
+            android:id="@+id/action_signupFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
 </navigation>
