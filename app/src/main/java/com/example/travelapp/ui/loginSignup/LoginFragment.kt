@@ -43,6 +43,8 @@ class LoginFragment : Fragment() {
         goToSignup()
 
         goToBack()
+
+        goToForgetPassword()
     }
 
     private fun showPasswordOrHide() {
@@ -70,6 +72,12 @@ class LoginFragment : Fragment() {
     private fun goToBack() {
         binding.backButton.setOnClickListener {
             Navigation.goTo(requireView(), R.id.action_loginFragment_to_onboardFragment)
+        }
+    }
+
+    private fun goToForgetPassword() {
+        binding.forgetPasswordButton.setOnClickListener {
+            Navigation.goTo(requireView(),R.id.action_loginFragment_to_forgetPasswordFragment)
         }
     }
 
